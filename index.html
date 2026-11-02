@@ -1,17 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keepsake - Digital & Branding Agency</title>
-    <!-- Підключення шрифтів з Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keepsake - Digital & Branding Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
 
+  <header class="header">
+    <div class="container header-container">
+      <a href="#top" class="logo">
+        <span class="logo-k">K</span>eepsake
+      </a>
+
+      <input type="checkbox" id="burger-toggle" class="burger-checkbox sr-only">
+      <label for="burger-toggle" class="burger-btn" aria-label="Toggle menu" aria-controls="mobile-nav" role="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#top" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#works" class="nav-link">Our Works</a></li>
+          <li><a href="#journal" class="nav-link">Journal</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#works" class="favourites-btn" aria-label="Favourites">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </a>
+
+      <div id="mobile-nav" class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li><a href="#top" class="mobile-nav-link active">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+          <li><a href="#works" class="mobile-nav-link">Our Works</a></li>
+          <li><a href="#journal" class="mobile-nav-link">Journal</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-actions">
+          <a href="#contact" class="btn btn-primary">Contact us</a>
+          <a href="#works" class="btn btn-secondary">Favourites</a>
+        </div>
+        <div class="mobile-contacts">
+          <a href="mailto:hello@keepsake.agency" class="mobile-contact-item">hello@keepsake.agency</a>
+          <a href="tel:+442079460912" class="mobile-contact-item">+44 20 7946 0912</a>
+          <div class="mobile-socials">
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener" aria-label="Dribbble">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm7.93 9.07c-.45-.06-2.42-.31-4.66.57-.18-.39-.37-.78-.58-1.16 2.87-1.35 4.01-2.92 4.14-3.1 1.04 1.41 1.66 3.14 1.66 5.02.01.57-.13-.88-.56-1.33zM15.4 6.1c-.13.19-1.21 1.66-3.95 2.94-1.27-2.34-2.69-4.32-2.84-4.52C9.8 4.18 10.87 4 12 4c1.28 0 2.48.27 3.4.77-.07.41-.05.84 0 1.33zm-8.25.12c.16.2 1.54 2.15 2.82 4.45-3.69 1.08-6.98 1.05-7.38 1.04.42-2.39 1.94-4.4 4.56-5.49zm-4.7 7.02c.4.01 3.27.03 6.94-.97.35.68.67 1.37.96 2.05-3.07 1.83-4.22 4.52-4.32 4.77-1.74-1.52-2.88-3.7-2.88-6.14 0-.17.02-.34.03-.51l-.73.8zm5.79 6.82c.15-.31 1.25-2.73 4.21-4.49 1.34 3.51 1.89 6.47 1.96 6.89-1.42.49-2.94.76-4.51.76-1.14 0-2.24-.15-3.28-.43.51-.78 1.13-1.87 1.62-2.73zm8.38 1.48c-.08-.49-.62-3.32-1.93-6.72 2.07-.86 3.89-.64 4.31-.58-.33 2.97-2.31 5.46-5.07 6.64.93.22 1.88.5 2.69.66z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="container hero-container">
+        <h1 class="hero-title">We're Keepsake, a digital &amp; branding agency</h1>
+        <p class="hero-text">Specializing in web design, poster, motion video, based in London. We love to turn ideas into beautiful things.</p>
+        <div class="hero-buttons">
+          <a href="#works" class="btn btn-primary">See our works</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our awesome works</h2>
+        </div>
+
+        <input type="radio" name="work-filter" id="filter-all" class="filter-radio sr-only" checked>
+        <input type="radio" name="work-filter" id="filter-branding" class="filter-radio sr-only">
+        <input type="radio" name="work-filter" id="filter-identity" class="filter-radio sr-only">
+        <input type="radio" name="work-filter" id="filter-print" class="filter-radio sr-only">
+        <input type="radio" name="work-filter" id="filter-web" class="filter-radio sr-only">
+        <input type="radio" name="work-filter" id="filter-motion" class="filter-radio sr-only">
+
+        <div class="chips-container">
+          <label for="filter-all" class="chip chip-all">All</label>
+          <label for="filter-branding" class="chip chip-branding">Branding</label>
+          <label for="filter-identity" class="chip chip-identity">Identity</label>
+          <label for="filter-print" class="chip chip-print">Print</label>
+          <label for="filter-web" class="chip chip-web">Web</label>
+          <label for="filter-motion" class="chip chip-motion">Motion</label>
+        </div>
+
+        <div class="works-grid">
+          <div class="work-card" data-category="branding" tabindex="0">
+            <img src="images/work-1.jpg" alt="Minimal branding identity showcase" width="600" height="474" loading="lazy">
+            <div class="card-overlay">
+              <div class="plus-icon">+</div>
+              <h3 class="card-title">Brand Packaging</h3>
+              <div class="card-divider"></div>
+              <span class="card-category">Branding</span>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="print" tabindex="0">
+            <img src="images/work-2.jpg" alt="Editorial typography and poster design" width="600" height="474" loading="lazy">
+            <div class="card-overlay">
+              <div class="plus-icon">+</div>
+              <h3 class="card-title">Editorial Poster</h3>
+              <div class="card-divider"></div>
+              <span class="card-category">Print</span>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="identity" tabindex="0">
+            <img src="images/work-3.jpg" alt="Corporate visual identity system" width="600" height="474" loading="lazy">
+            <div class="card-overlay">
+              <div class="plus-icon">+</div>
+              <h3 class="card-title">Nordic Identity</h3>
+              <div class="card-divider"></div>
+              <span class="card-category">Identity</span>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="web" tabindex="0">
+            <img src="images/work-4.jpg" alt="Mobile banking interface application" width="600" height="474" loading="lazy">
+            <div class="card-overlay">
+              <div class="plus-icon">+</div>
+              <h3 class="card-title">Fintech App</h3>
+              <div class="card-divider"></div>
+              <span class="card-category">Web</span>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="web" tabindex="0">
+            <img src="images/work-5.jpg" alt="User profile interface and dashboard" width="600" height="474" loading="lazy">
+            <div class="card-overlay">
+              <div class="plus-icon">+</div>
+              <h3 class="card-title">Profile UI</h3>
+              <div class="card-divider"></div>
+              <span class="card-category">Web</span>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="motion" tabindex="0">
+            <img src="images/work-6.jpg" alt="Animated visual identity and logo reel" width="600" height="474" loading="lazy">
+            <div class="card-overlay">
+              <div class="plus-icon">+</div>
+              <h3 class="card-title">Kinetic Reel</h3>
+              <div class="card-divider"></div>
+              <span class="card-category">Motion</span>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="print" tabindex="0">
+            <img src="images/work-7.jpg" alt="Sustainable packaging stationery box" width="600" height="474" loading="lazy">
+            <div class="card-overlay">
+              <div class="plus-icon">+</div>
+              <h3 class="card-title">Luxury Box</h3>
+              <div class="card-divider"></div>
+              <span class="card-category">Print</span>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="motion" tabindex="0">
+            <img src="images/work-8.jpg" alt="3D animated product explainer promo" width="600" height="474" loading="lazy">
+            <div class="card-overlay">
+              <div class="plus-icon">+</div>
+              <h3 class="card-title">Product Promo</h3>
+              <div class="card-divider"></div>
+              <span class="card-category">Motion</span>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="identity" tabindex="0">
+            <img src="images/work-9.jpg" alt="Stationery and business card visual layout" width="600" height="474" loading="lazy">
+            <div class="card-overlay">
+              <div class="plus-icon">+</div>
+              <h3 class="card-title">Studio Stationery</h3>
+              <div class="card-divider"></div>
+              <span class="card-category">Identity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="load-more-container">
+          <button type="button" class="btn btn-secondary load-more-btn">Load more works</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container text-center">
+        <h2 class="cta-title">Would you love to work with us?</h2>
+        <a href="#contact" class="btn btn-primary cta-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          Contact us
+        </a>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">What do we do</h2>
+          <p class="section-subtitle">We are a small team of designers and makers who help brands look their best online and offline.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-item">
+            <div class="service-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="0"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Web design</h3>
+            <p class="service-text">Responsive sites and product interfaces that look sharp on every screen.</p>
+          </div>
+
+          <div class="service-item">
+            <div class="service-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                <rect x="1" y="5" width="15" height="14" rx="0"></rect>
+              </svg>
+            </div>
+            <h3 class="service-title">Motion video</h3>
+            <p class="service-text">Explainers, logo animations and social clips that bring brands to life.</p>
+          </div>
+
+          <div class="service-item">
+            <div class="service-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg>
+            </div>
+            <h3 class="service-title">Print design</h3>
+            <p class="service-text">Posters, packaging and stationery prepared to be printed right.</p>
+          </div>
+
+          <div class="service-item">
+            <div class="service-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+                <circle cx="11" cy="11" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="service-title">Illustration</h3>
+            <p class="service-text">Custom illustrations and icon sets in a style that is yours alone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container">
+        <h2 class="sr-only">Our statistics</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">184</span>
+            <span class="stat-label">Projects completed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24</span>
+            <span class="stat-label">Awards won</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">68</span>
+            <span class="stat-label">Happy clients</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">12</span>
+            <span class="stat-label">Years experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Clients &amp; kind words</h2>
+        </div>
+
+        <div class="clients-grid">
+          <div class="client-logo">
+            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+              <circle cx="20" cy="20" r="10" opacity="0.3"></circle>
+              <circle cx="28" cy="20" r="10" opacity="0.6"></circle>
+              <text x="48" y="25" font-family="'Oswald', sans-serif" font-size="14" font-weight="700" letter-spacing="2">LUMEN</text>
+            </svg>
+          </div>
+          <div class="client-logo">
+            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+              <polygon points="12,28 24,10 36,28" opacity="0.5"></polygon>
+              <text x="46" y="25" font-family="'Oswald', sans-serif" font-size="14" font-weight="700" letter-spacing="2">APEX</text>
+            </svg>
+          </div>
+          <div class="client-logo">
+            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+              <rect x="14" y="12" width="16" height="16" transform="rotate(45 22 20)" opacity="0.4"></rect>
+              <text x="46" y="25" font-family="'Oswald', sans-serif" font-size="14" font-weight="700" letter-spacing="2">NORDIC</text>
+            </svg>
+          </div>
+          <div class="client-logo">
+            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+              <path d="M12 20 L22 10 L32 20 L22 30 Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+              <text x="44" y="25" font-family="'Oswald', sans-serif" font-size="14" font-weight="700" letter-spacing="2">PRISM</text>
+            </svg>
+          </div>
+          <div class="client-logo">
+            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+              <circle cx="22" cy="20" r="9" fill="none" stroke="currentColor" stroke-width="2.5"></circle>
+              <text x="44" y="25" font-family="'Oswald', sans-serif" font-size="14" font-weight="700" letter-spacing="2">VORTEX</text>
+            </svg>
+          </div>
+          <div class="client-logo">
+            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+              <line x1="12" y1="20" x2="32" y2="20" stroke="currentColor" stroke-width="3"></line>
+              <line x1="22" y1="10" x2="22" y2="30" stroke="currentColor" stroke-width="3"></line>
+              <text x="44" y="25" font-family="'Oswald', sans-serif" font-size="14" font-weight="700" letter-spacing="2">NEXUS</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-icon">
+            <svg width="36" height="28" viewBox="0 0 36 28" fill="var(--color-accent)">
+              <path d="M14.4 0L10.8 7.2C13.2 8.4 14.4 10.4 14.4 13.2H7.2C3.24 13.2 0 16.44 0 20.4C0 24.36 3.24 27.6 7.2 27.6C12.72 27.6 15.6 22.8 15.6 15.6V0H14.4ZM34.8 0L31.2 7.2C33.6 8.4 34.8 10.4 34.8 13.2H27.6C23.64 13.2 20.4 16.44 20.4 20.4C20.4 24.36 23.64 27.6 27.6 27.6C33.12 27.6 36 22.8 36 15.6V0H34.8Z"/>
+            </svg>
+          </div>
+          <p class="testimonial-text">Keepsake elevated our brand identity to a whole new level. Their attention to detail and creative vision helped us stand out in a saturated market and connect authentically with our audience.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-label="Alex Morgan">AM</div>
+            <div class="testimonial-meta">
+              <strong class="author-name">Alex Morgan</strong>
+              <span class="author-role">Creative Director at Vertex</span>
+            </div>
+          </div>
+          <div class="testimonial-slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="journal" id="journal">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">From the journal</h2>
+        </div>
+
+        <div class="journal-grid">
+          <article class="journal-card">
+            <div class="journal-preview">
+              <img src="images/journal-1.jpg" alt="Minimal design preview thumbnail" width="300" height="300" loading="lazy">
+            </div>
+            <div class="journal-content">
+              <div class="journal-meta">April 12, 2026 / <span class="journal-cat">Branding</span></div>
+              <h3 class="journal-title">The power of minimal design in 2026</h3>
+              <p class="journal-excerpt">Why reductive design aesthetics continue to capture user attention in modern web architecture.</p>
+              <a href="#journal" class="journal-link">Read more &rarr;</a>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <div class="journal-preview">
+              <img src="images/journal-2.jpg" alt="Motion design UX thumbnail" width="300" height="300" loading="lazy">
+            </div>
+            <div class="journal-content">
+              <div class="journal-meta">March 28, 2026 / <span class="journal-cat">Motion</span></div>
+              <h3 class="journal-title">Micro-interactions that elevate UX</h3>
+              <p class="journal-excerpt">How subtle movement and timing curves create emotional engagement in digital products.</p>
+              <a href="#journal" class="journal-link">Read more &rarr;</a>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <div class="journal-preview">
+              <img src="images/journal-3.jpg" alt="Accessibility layout guide thumbnail" width="300" height="300" loading="lazy">
+            </div>
+            <div class="journal-content">
+              <div class="journal-meta">March 15, 2026 / <span class="journal-cat">Web</span></div>
+              <h3 class="journal-title">Designing for accessibility from day one</h3>
+              <p class="journal-excerpt">Building interfaces that are usable, compliant, and delightful for every visitor.</p>
+              <a href="#journal" class="journal-link">Read more &rarr;</a>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <div class="journal-preview">
+              <img src="images/journal-4.jpg" alt="Print editorial tactile styling thumbnail" width="300" height="300" loading="lazy">
+            </div>
+            <div class="journal-content">
+              <div class="journal-meta">February 22, 2026 / <span class="journal-cat">Print</span></div>
+              <h3 class="journal-title">Tactile branding and editorial layout</h3>
+              <p class="journal-excerpt">Exploring paper grain, foil finishes, and grid discipline in printed publications.</p>
+              <a href="#journal" class="journal-link">Read more &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4 class="footer-heading">Studio</h4>
+            <ul class="footer-nav">
+              <li><a href="#about">About us</a></li>
+              <li><a href="#works">Portfolio</a></li>
+              <li><a href="#journal">Journal</a></li>
+              <li><a href="#contact">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Services</h4>
+            <ul class="footer-nav">
+              <li><a href="#about">Web design</a></li>
+              <li><a href="#about">Motion video</a></li>
+              <li><a href="#about">Print design</a></li>
+              <li><a href="#about">Brand identity</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-subscribe">
+          <h4 class="footer-heading">Subscribe to our newsletter</h4>
+          <p class="footer-subtext">Get the latest articles, agency updates and inspiration delivered to your inbox.</p>
+          <form class="subscribe-form" action="#" method="post">
+            <div class="subscribe-row">
+              <label for="footer-email" class="sr-only">Email address</label>
+              <input type="email" id="footer-email" name="email" class="subscribe-input" placeholder="Your email address" required aria-describedby="subscribe-error">
+              <button type="submit" class="btn btn-primary subscribe-btn">Subscribe</button>
+            </div>
+            <p id="subscribe-error" class="form-error">Please enter a valid email address.</p>
+            <label class="consent-label">
+              <input type="checkbox" name="agree" class="consent-checkbox" required>
+              <span>I agree to the privacy policy and terms.</span>
+            </label>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Keepsake Agency. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+            </svg>
+          </a>
+          <a href="https://dribbble.com" target="_blank" rel="noopener" aria-label="Dribbble">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm7.93 9.07c-.45-.06-2.42-.31-4.66.57-.18-.39-.37-.78-.58-1.16 2.87-1.35 4.01-2.92 4.14-3.1 1.04 1.41 1.66 3.14 1.66 5.02.01.57-.13-.88-.56-1.33zM15.4 6.1c-.13.19-1.21 1.66-3.95 2.94-1.27-2.34-2.69-4.32-2.84-4.52C9.8 4.18 10.87 4 12 4c1.28 0 2.48.27 3.4.77-.07.41-.05.84 0 1.33zm-8.25.12c.16.2 1.54 2.15 2.82 4.45-3.69 1.08-6.98 1.05-7.38 1.04.42-2.39 1.94-4.4 4.56-5.49zm-4.7 7.02c.4.01 3.27.03 6.94-.97.35.68.67 1.37.96 2.05-3.07 1.83-4.22 4.52-4.32 4.77-1.74-1.52-2.88-3.7-2.88-6.14 0-.17.02-.34.03-.51l-.73.8zm5.79 6.82c.15-.31 1.25-2.73 4.21-4.49 1.34 3.51 1.89 6.47 1.96 6.89-1.42.49-2.94.76-4.51.76-1.14 0-2.24-.15-3.28-.43.51-.78 1.13-1.87 1.62-2.73zm8.38 1.48c-.08-.49-.62-3.32-1.93-6.72 2.07-.86 3.89-.64 4.31-.58-.33 2.97-2.31 5.46-5.07 6.64.93.22 1.88.5 2.69.66z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+    </svg>
+  </a>
 
 </body>
 </html>
