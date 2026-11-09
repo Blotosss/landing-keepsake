@@ -17,8 +17,8 @@
         <span class="logo-k">K</span>eepsake
       </a>
 
-      <input type="checkbox" id="burger-toggle" class="burger-checkbox sr-only">
-      <label for="burger-toggle" class="burger-btn" aria-label="Toggle menu" aria-controls="mobile-nav" role="button">
+      <input type="checkbox" id="burger-toggle" class="burger-checkbox sr-only" aria-controls="mobile-nav" aria-expanded="false">
+      <label for="burger-toggle" class="burger-btn" aria-label="Toggle navigation menu" tabindex="0">
         <span></span>
         <span></span>
         <span></span>
@@ -118,7 +118,7 @@
 
         <div class="works-grid">
           <div class="work-card" data-category="branding" tabindex="0">
-            <img src="images/work-1.jpg" alt="Minimal branding identity showcase" width="600" height="474" loading="lazy">
+            <img src="images/work-1.webp" alt="Minimal branding identity showcase" width="358" height="282">
             <div class="card-overlay">
               <div class="plus-icon">+</div>
               <h3 class="card-title">Brand Packaging</h3>
@@ -128,7 +128,7 @@
           </div>
 
           <div class="work-card" data-category="print" tabindex="0">
-            <img src="images/work-2.jpg" alt="Editorial typography and poster design" width="600" height="474" loading="lazy">
+            <img src="images/work-2.webp" alt="Editorial typography and poster design" width="358" height="282">
             <div class="card-overlay">
               <div class="plus-icon">+</div>
               <h3 class="card-title">Editorial Poster</h3>
@@ -138,7 +138,7 @@
           </div>
 
           <div class="work-card" data-category="identity" tabindex="0">
-            <img src="images/work-3.jpg" alt="Corporate visual identity system" width="600" height="474" loading="lazy">
+            <img src="images/work-3.webp" alt="Corporate visual identity system" width="358" height="282">
             <div class="card-overlay">
               <div class="plus-icon">+</div>
               <h3 class="card-title">Nordic Identity</h3>
@@ -148,7 +148,7 @@
           </div>
 
           <div class="work-card" data-category="web" tabindex="0">
-            <img src="images/work-4.jpg" alt="Mobile banking interface application" width="600" height="474" loading="lazy">
+            <img src="images/work-4.webp" alt="Mobile banking interface application" width="358" height="282" loading="lazy">
             <div class="card-overlay">
               <div class="plus-icon">+</div>
               <h3 class="card-title">Fintech App</h3>
@@ -158,7 +158,7 @@
           </div>
 
           <div class="work-card" data-category="web" tabindex="0">
-            <img src="images/work-5.jpg" alt="User profile interface and dashboard" width="600" height="474" loading="lazy">
+            <img src="images/work-5.webp" alt="User profile interface and dashboard" width="358" height="282" loading="lazy">
             <div class="card-overlay">
               <div class="plus-icon">+</div>
               <h3 class="card-title">Profile UI</h3>
@@ -168,7 +168,7 @@
           </div>
 
           <div class="work-card" data-category="motion" tabindex="0">
-            <img src="images/work-6.jpg" alt="Animated visual identity and logo reel" width="600" height="474" loading="lazy">
+            <img src="images/work-6.webp" alt="Animated visual identity and logo reel" width="358" height="282" loading="lazy">
             <div class="card-overlay">
               <div class="plus-icon">+</div>
               <h3 class="card-title">Kinetic Reel</h3>
@@ -178,7 +178,7 @@
           </div>
 
           <div class="work-card" data-category="print" tabindex="0">
-            <img src="images/work-7.jpg" alt="Sustainable packaging stationery box" width="600" height="474" loading="lazy">
+            <img src="images/work-7.webp" alt="Sustainable packaging stationery box" width="358" height="282" loading="lazy">
             <div class="card-overlay">
               <div class="plus-icon">+</div>
               <h3 class="card-title">Luxury Box</h3>
@@ -188,7 +188,7 @@
           </div>
 
           <div class="work-card" data-category="motion" tabindex="0">
-            <img src="images/work-8.jpg" alt="3D animated product explainer promo" width="600" height="474" loading="lazy">
+            <img src="images/work-8.webp" alt="3D animated product explainer promo" width="358" height="282" loading="lazy">
             <div class="card-overlay">
               <div class="plus-icon">+</div>
               <h3 class="card-title">Product Promo</h3>
@@ -198,7 +198,7 @@
           </div>
 
           <div class="work-card" data-category="identity" tabindex="0">
-            <img src="images/work-9.jpg" alt="Stationery and business card visual layout" width="600" height="474" loading="lazy">
+            <img src="images/work-9.webp" alt="Stationery and business card visual layout" width="358" height="282" loading="lazy">
             <div class="card-overlay">
               <div class="plus-icon">+</div>
               <h3 class="card-title">Studio Stationery</h3>
@@ -218,7 +218,7 @@
       <div class="container text-center">
         <h2 class="cta-title">Would you love to work with us?</h2>
         <a href="#contact" class="btn btn-primary cta-btn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
           </svg>
           Contact us
@@ -357,7 +357,7 @@
         </div>
 
         <div class="testimonial-card">
-          <div class="quote-icon">
+          <div class="quote-icon" aria-hidden="true">
             <svg width="36" height="28" viewBox="0 0 36 28" fill="var(--color-accent)">
               <path d="M14.4 0L10.8 7.2C13.2 8.4 14.4 10.4 14.4 13.2H7.2C3.24 13.2 0 16.44 0 20.4C0 24.36 3.24 27.6 7.2 27.6C12.72 27.6 15.6 22.8 15.6 15.6V0H14.4ZM34.8 0L31.2 7.2C33.6 8.4 34.8 10.4 34.8 13.2H27.6C23.64 13.2 20.4 16.44 20.4 20.4C20.4 24.36 23.64 27.6 27.6 27.6C33.12 27.6 36 22.8 36 15.6V0H34.8Z"/>
             </svg>
@@ -388,7 +388,7 @@
         <div class="journal-grid">
           <article class="journal-card">
             <div class="journal-preview">
-              <img src="images/journal-1.jpg" alt="Minimal design preview thumbnail" width="300" height="300" loading="lazy">
+              <img src="images/journal-1.webp" alt="Minimal design preview thumbnail" width="150" height="150" loading="lazy">
             </div>
             <div class="journal-content">
               <div class="journal-meta">April 12, 2026 / <span class="journal-cat">Branding</span></div>
@@ -400,7 +400,7 @@
 
           <article class="journal-card">
             <div class="journal-preview">
-              <img src="images/journal-2.jpg" alt="Motion design UX thumbnail" width="300" height="300" loading="lazy">
+              <img src="images/journal-2.webp" alt="Motion design UX thumbnail" width="150" height="150" loading="lazy">
             </div>
             <div class="journal-content">
               <div class="journal-meta">March 28, 2026 / <span class="journal-cat">Motion</span></div>
@@ -412,7 +412,7 @@
 
           <article class="journal-card">
             <div class="journal-preview">
-              <img src="images/journal-3.jpg" alt="Accessibility layout guide thumbnail" width="300" height="300" loading="lazy">
+              <img src="images/journal-3.webp" alt="Accessibility layout guide thumbnail" width="150" height="150" loading="lazy">
             </div>
             <div class="journal-content">
               <div class="journal-meta">March 15, 2026 / <span class="journal-cat">Web</span></div>
@@ -424,7 +424,7 @@
 
           <article class="journal-card">
             <div class="journal-preview">
-              <img src="images/journal-4.jpg" alt="Print editorial tactile styling thumbnail" width="300" height="300" loading="lazy">
+              <img src="images/journal-4.webp" alt="Print editorial tactile styling thumbnail" width="150" height="150" loading="lazy">
             </div>
             <div class="journal-content">
               <div class="journal-meta">February 22, 2026 / <span class="journal-cat">Print</span></div>
@@ -465,17 +465,25 @@
         <div class="footer-subscribe">
           <h4 class="footer-heading">Subscribe to our newsletter</h4>
           <p class="footer-subtext">Get the latest articles, agency updates and inspiration delivered to your inbox.</p>
-          <form class="subscribe-form" action="#" method="post">
-            <div class="subscribe-row">
-              <label for="footer-email" class="sr-only">Email address</label>
-              <input type="email" id="footer-email" name="email" class="subscribe-input" placeholder="Your email address" required aria-describedby="subscribe-error">
-              <button type="submit" class="btn btn-primary subscribe-btn">Subscribe</button>
+          <form class="subscribe-form" id="subscribe-form" action="#subscribed" method="get">
+            <div class="subscribe-fields">
+              <div class="subscribe-row">
+                <label for="footer-email" class="sr-only">Email address</label>
+                <input type="email" id="footer-email" name="email" class="subscribe-input" placeholder="Your email address" required aria-describedby="subscribe-error">
+                <button type="submit" class="btn btn-primary subscribe-btn">Subscribe</button>
+              </div>
+              <p id="subscribe-error" class="form-error">Please enter a valid email address.</p>
+              <label class="consent-label">
+                <input type="checkbox" name="agree" class="consent-checkbox" required>
+                <span>I agree to the privacy policy and terms.</span>
+              </label>
             </div>
-            <p id="subscribe-error" class="form-error">Please enter a valid email address.</p>
-            <label class="consent-label">
-              <input type="checkbox" name="agree" class="consent-checkbox" required>
-              <span>I agree to the privacy policy and terms.</span>
-            </label>
+            <div id="subscribed" class="form-success">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--color-teal)" aria-hidden="true">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Thank you for subscribing! Check your inbox soon.</span>
+            </div>
           </form>
         </div>
       </div>
@@ -516,7 +524,7 @@
   </footer>
 
   <a href="#top" class="back-to-top" aria-label="Back to top">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
     </svg>
   </a>
